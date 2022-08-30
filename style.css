@@ -1,0 +1,97 @@
+.todo-form__add-list:focus {outline: none;} /* outline 테두리 없애기 */
+
+body{
+    background-color: #44ba81;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout{
+    width:450px;
+    height:500px;
+    /*border:white solid 4px;*/
+    border-radius: 5px;
+}
+
+h1{  
+    text-align: center;
+    font-size:30px;
+    color:white;
+    margin-bottom:30px;
+}
+
+#todo-form{
+    display: flex;
+    justify-content: center;
+}
+
+#todo-form .todo-form__add-list{
+    height:40px;
+    width:400px;
+    margin-top:20px;
+    text-align: center;
+    background-color: #44ba81;
+    border:0px;
+    border-bottom:5px solid #2f825a;
+    font-size:15px;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-form__add-list::placeholder{
+    color:#2f825a;
+}
+#todo-form .todo-form__add-list:focus{
+    border-color: white;
+}
+
+#todo-list{
+    list-style: none;
+    margin-right:10px;
+    margin-left:10px;
+    color:white;
+}
+
+ul{
+    width:400px;
+    position: relative;
+}
+
+li{
+    height:40px;
+    width:350px;
+    margin-top:11dighpx;
+    padding: 8px 15px 0px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    display:flex;
+}
+
+span{
+    width:400px;
+}
+
+button{
+    position: absolute;
+    border:none;
+    background-color: #44ba81;
+    color:#44ba81;
+    right:80px;
+    margin-top:2px;
+    font-size:18px;
+    transition: all 0.1s ease-in-out;
+}
+
+li:hover, li:hover button{
+    background-color: #2f825a;
+}
+
+.complete{
+    color:#205c3f;
+    text-decoration: line-through;
+    font-style: italic;
+}

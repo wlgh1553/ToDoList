@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>to do list!</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>To Do List!</h1>
+        <div class="layout">
+            
+
+            <form id="todo-form">
+                <input type="text" class="todo-form__add-list" placeholder="Write a To Do and Press Enter!" 
+                onfocus="this.placeholder=''" onblur="this.placeholder='Write a To Do and Press Enter!'" required>
+            </form>
+
+            <form>
+                <ul id="todo-list"></ul>
+            </form>
+            
+
+        </div>
+
+
+    </body>
+    
+    <script src="todo.js"></script>
+    <script src="https://kit.fontawesome.com/1888ddfc77.js" crossorigin="anonymous"></script>
+
+</html>
